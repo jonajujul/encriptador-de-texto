@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>encriptacion de texto</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="imagenes proyecto/muñecos.png.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="encriptar">
-            <textarea 
-            name="texto" 
-            class="texto"
-             id="texto"
-              cols="30"
-               rows="10"
-                placeholder="ingresa el texto"
-                ></textarea>
+      <div class="encriptar">
+        <textarea 
+          name="texto" 
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="ingresa el texto"
+        ></textarea>
+
         <div class="terminos">
-            <p>solo letras minusculas sin acento</p>
+          <p>Solo letras minusculas sin acento. by Jonathan Aviles Hernandez</p>
         </div>
         <div class="botones">
-            <button class="btn-encriptar" value="encriptar" onclick="encriptar()">
-                Encriptar
-            </button>
-            <input 
+          <button class="btn-encriptar"  type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <input 
             type="button"
             class="btn-desencriptar"
             value="Desencriptar"
             onclick="desencriptar()"
-            />
+          />
         </div>
-    </div>
-    <div class="encriptado">
-        <img src="" alt=""id="imagen">
+      </div>
+      <div class="encriptado">
+        <img src="imagenes proyecto/muñecos.png.jpg" alt="" id="muñeco"/>
         <div class="mensaje-encriptado" id="mensaje-encriptado">
-            <h2 id="titulo de mensaje"> no se encontro mensaje</h2>
-            <p id="parrafo">Ingresa el texto que desean encriptar o desencriptar</p>
-            <textarea 
+          <h2 id="titulo-mensaje"> no se encontro mensaje</h2>
+          <p id="parrafo">
+            Ingresa el texto que desean encriptar o desencriptar
+          </p>
+          <!-- <textarea 
             name="mensaje" 
             id="mensaje" 
             cols="30" 
             rows="10" 
             class="mensaje"
-            ></textarea>
+          ></textarea> -->
         </div>
+      </div>
     </div>
-    
-</div>
-</body>
-<script src="index.js"></script>
+  </body>
+  <script src="index.js"></script>
 </html>
