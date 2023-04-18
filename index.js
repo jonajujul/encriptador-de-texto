@@ -5,11 +5,11 @@ function encriptar() {
   let muñeco = document.getElementById("muñeco");
 
   let textoCifrado = texto
-    .replace(/e/gi, "ere")
-    .replace(/i/gi, "inca")
-    .replace(/a/gi,"alo")
-    .replace(/o/gi, "octa")
-    .replace(/u/gi, "ubre");
+    .replace(/e/gi, "er")
+    .replace(/i/gi, "in")
+    .replace(/a/gi,"al")
+    .replace(/o/gi, "oc")
+    .replace(/u/gi, "ub");
 
    if(texto.length != 0) {
     document.getElementById("texto").value = textoCifrado;
@@ -30,15 +30,15 @@ function desencriptar () {
   let parrafo = document.getElementById("parrafo");
   let muñeco = document.getElementById("muñeco");
 
-  let textoCifrado = texto
-    .replace(/ere/gi, "e")
-    .replace(/inca/gi, "i")
-    .replace(/alo/gi,"a")
-    .replace(/octa/gi, "o")
-    .replace(/ubre/gi, "u");
+  let textoDesencriptado = texto
+    .replace(/er/gi, "e")
+    .replace(/in/gi, "i")
+    .replace(/al/gi,"a")
+    .replace(/oc/gi, "o")
+    .replace(/ub/gi, "u");
     
     if (texto.length != 0) {
-      document.getElementById("texto").value = textoCifrado;
+      document.getElementById("texto").value = textoDesencriptado;
       tituloMensaje.textContent = "Texto desencriptado con exito";
       parrafo.textContent = "";
       muñeco.src = "./imagenes proyecto/desencriptar.png.jpg";
